@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQurery02</title>
+    <style>
+        .item {
+            margin: auto;
+            width: 400px;
+        }
+        
+        .btn {
+            background-color: rgb(36, 25, 25);
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .text {
+            background-color: #ccc;
+        }
+        
+        .ad {
+            background: rgba(0, 0, 0, .7);
+            /* background: url(http://picsum.photos/1500/860?random=1) no-repeat center center / cover; */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .content {
+            background-color: #fff;
+            width: 70%;
+            height: 300px;
+            margin: auto;
+            position: relative;
+        }
+        
+        .ad .close {
+            text-decoration: none;
+            color: #fff;
+            background-color: rgb(255, 0, 0);
+            display: block;
+            height: 30px;
+            width: 50px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item 01">
+        <div class="btn 01">Open/Close</div>
+        <div class="text 01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, atque nobis autem explicabo quod soluta voluptates nulla reiciendis ipsum esse, nesciunt similique hic maiores dolores maxime nostrum optio quidem sint.</div>
+    </div>
+    <div class="item 02">
+        <div class="btn 02">Open/Close</div>
+        <div class="text 02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, atque nobis autem explicabo quod soluta voluptates nulla reiciendis ipsum esse, nesciunt similique hic maiores dolores maxime nostrum optio quidem sint.</div>
+    </div>
+    <div class="ad">
+        <div class="content">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi aspernatur ullam deleniti et cum repellat fuga necessitatibus veritatis veniam nobis, adipisci ea vero tempore labore fugit, laboriosam quidem. Vitae, neque?</p>
+            <a href="#" class="close">close</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".ad .close").click(function() {
+                $(".ad").fadeOut();
+            })
+
+            $(".btn.01").click(function() {
+                $(".text.01").slideToggle(); // slideDown slideUp slideToggle
+            })
+
+            $(".btn.02").click(function() {
+                $(".text.02").fadeTo("slow", .3); // fadeIn fadeOut fadeTo fadeToggle
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>

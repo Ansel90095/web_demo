@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD_demo_01</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 300px;
+        }
+        
+        .x {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
+        .content .a {
+            font-size: 30px;
+        }
+        
+        .a {
+            background-color: rgb(255, 199, 199);
+        }
+        
+        .b {
+            background-color: rgb(199, 199, 255);
+            display: none;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .box {
+                width: 50%;
+                float: left;
+                display: block;
+                /* 依螢幕尺寸改變排列 */
+            }
+            /* .x {
+                display: none;
+            } */
+        }
+        
+        @media screen and (min-width: 1200px) {
+            .a {
+                background-color: rgb(199, 250, 199);
+                /* 依螢幕尺寸改變排列 */
+            }
+            .x {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="cursor">
+            <span class="add">add X </span>
+            <span class="remove"> remove X</span>
+            <span class="toggle"> toggle X</span>
+        </div>
+        <div class="box a">a</div>
+        <div class="box b">b</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".a").dblclick(function() {
+                $(".b").toggle();
+            })
+            $(".add").click(function() {
+                $(".a").addClass("x"); //no dot
+            })
+            $(".remove").click(function() {
+                $(".a").removeClass("x"); //no dot
+            })
+            $(".toggle").click(function() {
+                $(".a").toggleClass("x"); //no dot
+            })
+
+        })
+    </script>
+</body>
+
+</html>

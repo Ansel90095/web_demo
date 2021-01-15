@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD_demo_02</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .item {
+            font-family: cursive;
+            background-color: #aaa;
+            padding: 15px;
+            margin: 10px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .item {
+                width: 30%;
+            }
+            .container {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, non. Commodi quod illo unde error ea odit explicabo. Officiis dolor, tempora voluptatibus voluptatum dolore, nam maxime sapiente ipsa voluptatem ducimus aliquam rem mollitia
+                quidem eius ut neque voluptas ab! Dolor inventore soluta totam magnam, odit fugit dolore earum hic ipsam?</p>
+        </div>
+        <div class="item">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, non. Commodi quod illo unde error ea odit explicabo. Officiis dolor, tempora voluptatibus voluptatum dolore, nam maxime sapiente ipsa voluptatem ducimus aliquam rem mollitia
+                quidem eius ut neque voluptas ab! Dolor inventore soluta totam magnam, odit fugit dolore earum hic ipsam?</p>
+        </div>
+        <div class="item">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, non. Commodi quod illo unde error ea odit explicabo. Officiis dolor, tempora voluptatibus voluptatum dolore, nam maxime sapiente ipsa voluptatem ducimus aliquam rem mollitia
+                quidem eius ut neque voluptas ab! Dolor inventore soluta totam magnam, odit fugit dolore earum hic ipsam?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

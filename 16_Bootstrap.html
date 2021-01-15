@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Bootsrap_components</title>
+
+    <style>
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        
+        .carousel-caption {
+            color: #000;
+        }
+        
+        .nav_breadcrumb {
+            background-color: #ccc;
+        }
+        
+        .main_footer {
+            font-size: 8px;
+            color: #fff;
+            background-color: #000;
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar
+                <img src="https://camo.githubusercontent.com/a664defdd5c2ec93a3fbfb51e0f2aaafa5dc57bf1e13aa47456ced037b3cebe8/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" alt="" width="30" height="24" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- link trigger modal -->
+                        <a class="nav-link active" href="#exampleModal" data-bs-toggle="modal">Login</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="http://picsum.photos/1920/500?random=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="http://picsum.photos/1920/500?random=2" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="http://picsum.photos/1920/500?random=3" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </header>
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="nav_breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 list-group list-group-flush">
+                    <a href="https://getbootstrap.com/docs/5.0/components/list-group/" class="list-group-item list-group-item-action active" aria-current="true">
+                  list-group-flush
+                </a>
+                    <a href="#" class="list-group-item list-group-item-action">a Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item list-group-item-action">a Morbi leo risus</a>
+                    <a href="#" class="list-group-item list-group-item-action">a Porta ac consectetur ac</a>
+                    <a href="https://getbootstrap.com/docs/5.0/components/list-group/" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">a disabled</a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="content_1">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor quasi sit eveniet, cumque tempora quam adipisci enim rerum ex praesentium, non vel aliquid id cum, quaerat facere velit. Quo.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=1" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=2" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=3" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=1" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=2" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=3" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=1" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=2" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="http://picsum.photos/700/500?random=3" alt="" class="img-fluid">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#" aria-label="Previous">&#60</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">&#62</a>
+            </li>
+        </ul>
+    </nav>
+    <footer class="container-fluid main_footer text-center">
+        &copy; Ansel Siao 2020
+    </footer>
+
+
+
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem temporibus ipsam aliquam quae laborum perferendis ab animi et quod ea!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

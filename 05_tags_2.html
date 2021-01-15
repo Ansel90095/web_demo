@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="06.css">
+    <title>05_tags_2</title>
+</head>
+
+<body>
+    <!-- <body text="#aaa"> -->
+    <!-- 可以此做頁面的設定 -->
+
+
+    <!-- font-face & font-family (css)-->
+    <!-- 在html做記號後，在css做字體的控制。特殊符號可以使用unicode。 -->
+    ❆ A holiday <span class="a"> romantic comedy that captures the range of emotions</span> tied to wanting your family's acceptance, being true to yourself, and trying not to ruin Christmas. 假日<span class="a">浪漫喜劇，捕捉了與想要家人接受，對自己</span>忠貞不渝，不破壞聖誕節的情感相關的各種情感。
+
+    <!-- abbr -->
+    <!-- 註記縮寫，游標停在文字上，會顯示全稱 -->
+    <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+    <p>Do you know the "<abbr title="facebook, linkdin, amazon, google">flag</abbr>" ?</p>
+
+
+    <!-- data -->
+    <!-- 將內容和機器可閱讀的資料聯繫，如果內容與時間相關，則使用<time>。 -->
+    <!-- 例如產品名稱與產品編號。 -->
+    <p>New Products:</p>
+    <ul>
+        <li><data value="398">Mini Ketchup</data></li>
+        <li><data value="399">Jumbo Ketchup</data></li>
+        <li><data value="400">Mega Jumbo Ketchup</data></li>
+    </ul>
+
+    <!-- <em> & <i> & <cite> -->
+    <!-- 以上三個tag都有斜體效果，i只是外觀變化，em是有強調或是重讀，cite使用在作品的標題，例如書籍或電影名稱。 -->
+    <!-- <em></em>(emphasis) -->
+    <h2>em</h2>
+    <p>"Just <em>do</em> it already!" <br> "We <em> had </em> to do something about it"</p>
+    <h2>i</h2>
+    <p>"The <i>Queen Mary</i> sailed last night"</p>
+    <!-- 它只是表明，谈论的对象不是一个名叫玛丽的女王，而是一艘名字叫玛丽的船。 -->
+
+
+    <!-- <mark> -->
+    <!-- <strong> 元素用来表示文本在上下文的重要性的， 而 <mark> 元素是用来表示上下文的关联性的，例如搜尋結果高亮顯示。 -->
+    <p> <b> &lt;mark&gt;</b> 元素用于 <mark>高亮</mark> 文本</p>
+
+    <!-- <small> -->
+    <!-- 除了它的样式含义，这个元素也表示边注释和附属细则，包括版权和法律文本。 樣式涵義一樣能用css達成。-->
+    MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.TT
+    <hr>
+    <p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+    <span style="font-size:0.8em">This whole sentence is in small letters.</span>
+
+    <!-- <strong> & <b> -->
+    <!-- strong代表“内容强烈的重要性(strong importance for its contents) ”。b (blod)只是樣式外觀的改變，单纯地吸引注意而不增加其重要性。 -->
+    <p>When doing x it is <strong>imperative</strong> to do y before proceeding. Lorem ipsum dolor, sit amet consectetur <b>blod</b> elit. Numquam, vitae.</p>
+
+    <!-- <sub> & <sup> -->
+    <!-- <sub> subscript -->
+    <!-- <sup> superscript -->
+    <!-- 用於排版目的，改變文本的位置會改變含義，例如:數學(f^4)、法語縮寫(M^lle，M^me 或者 C^ie) -->
+    <p>The chemical formula of water:H<sub>2</sub>O <br> CO<sub>2</sub>, f<sup>4</sup>, M<sup>lle</sup>, M<sup>me</sup>, C<sup>ie</sup>, CaCO<sub>3</sub>, NaHCO<sub>3</sub><br>SO<sub>4
+        </sub><sup style="margin-left:-11px">2</sup>
+    </p>
+
+    <!-- 不能用于样式上的目的，比如产品名称 LaTeX 的样式，这时应该使用 CSS样式： vertical-align 属性的 sub 值來達成效果。 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/LaTeX_logo.png" alt="LaTeX Logo" width="40%">
+
+    <!-- <var>  Variable-->
+    <!-- 表示数学表达式或编程上下文中的变量名称。瀏覽器通常將他預設成斜體 -->
+    <p> <b> &lt;var&gt;</b> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+
+
+    <!--  -->
+
+
+    <!-- <map> & <area> -->
+    <!-- An image-map is an image with clickable areas. 具有可點擊區域的一張圖片 -->
+    <!-- <area>元素只在<map>元素內部使用，图片上定义热点区域-->
+    <!-- 讓 img 圖片能夠規劃出不同區塊，且使每個區塊成為 Link 超連結，例如旅遊地圖，詳細介紹 https://spicyboyd.blogspot.com/2018/06/web-html-map-tag.html-->
+
+    <img src="https://i2.wp.com/suku3c.com/wp-content/uploads/2020/02/Google-Map-%E5%BB%BA%E7%BD%AE%E5%8E%9F%E7%90%86.jpg?fit=960%2C540&ssl=1" alt="Workplace" usemap="#workmap" width="400">
+
+    <map name="workmap">
+        <area shape="rect" coords="50,102,82,123" alt="虎頭山" href="虎頭山.htm" title="虎頭山" target="blank">
+        <area shape="circle" coords="324,36,11" alt="行天宮" href="行天宮.htm" title="行天宮">
+        <area shape="poly" coords="111,187,111,160,159.5,50,199.5,30,239.5,50,288,160,288,187" alt="Google maps" href="Google maps.htm" title="Google maps" target="blank">
+    </map>
+
+    <!-- <audio> -->
+    <!-- 用法類似img。浏览器不支持该元素时，会显示 <audio></audio> 标签之间的内容 -->
+    <!-- autoplay, controls(panel), loop, perload(none/meadata/auto), -->
+
+    <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio loop controls src="material/Cow Mooing Sounds 100 Real.mp3">
+            Your browser does not support the <code>audio</code> element.            
+        </audio>
+    </figure>
+
+    <!-- <video> & <track> -->
+    <!-- 可以將字幕檔案插入<video>和<audio>裡。可以使用VTT字幕產生器，輸入影片local端IP網址 -->
+    <!-- audio,使用track沒有效果?? -->
+
+
+    <audio src="material/在座的各位，都是垃圾 ft. 屈中恆 (破壞之王中配原聲重現).mp3" controls>        
+        <track kind="captions" label="繁中中" srclang="zh" src="material/在座的各位.vtt" default>Your browser does not support the audio element.
+    </audio>
+
+    <video src="material/在座的各位，都是垃圾 ft. 屈中恆 (破壞之王中配原聲重現).mp4" controls loop poster="https://i.ytimg.com/vi/HetYKZky2hw/maxresdefault.jpg" width="80%"><!-- autoplay -->
+        <track kind="captions" srclang="zh" src="material/在座的各位.vtt" default>
+        <track kind="subtitles" srclang="en" src="enmaterial/在座的各位.vtt" default>
+        <track kind="subtitles" srclang="zh" label="中中" src="在座的各位.vtt" default>
+                    Your browser does not support the video element.
+    </video>
+
+
+    <!-- <iframe> -->
+    <!-- 插入外部的影片或網頁 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HJUFd1-v-i8" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--  -->
+    <!-- <object> -->
+    <!-- 可以用來插入連覽器外掛(plugins),Flash,PDF...。 -->
+    <!--  -->
+    <!--  -->
+
+
+    <!-- <Picture> -->
+    <!-- 如果source裡的pic開啟失敗，就會開啟img裡的pic。要决定加载哪个URL，user agent 检查每个 <source> 的 srcset、media 和 type 属性，来选择最匹配页面当前布局、显示设备特征等的兼容图像。 ​ -->
+    <!--Change the browser window width to see the image change.照片寬度小於800就會開起img裡的pic。-->
+
+    <picture>
+        <source srcset="https://s.yimg.com/ny/api/res/1.2/x6BbmzJjrSrSNp8CsyGftA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://s.yimg.com/os/creatr-uploaded-images/2020-12/4d65d8e0-49e9-11eb-9b6d-055fd27028dd" media="(min-width: 800px)">
+        <img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/01/03/20210103-120618_U13380_M664412_e0eb.jpg?itok=KAbjVRzi" width="80%" alt="where am i ??" />
+    </picture>
+
+    <!--  -->
+    <!-- <source> 元素为 <picture>, <audio> 或者 <video> 元素指定多个媒体资源。这是一个空元素。它通常用于以不同浏览器支持的多种格式提供相同的媒体内容。 -->
+    <!--  -->
+
+    <!-- <canvas> -->
+    <!-- 自製圖片，建構圖片大小，用JS設定內容(線條,顏色,文字) -->
+    <canvas id="canvas" width="500" height="300">
+            抱歉，您的浏览器不支持 canvas 元素（这些内容将会在不支持canvas元素的浏览器或是禁用了JavaScript的浏览器内渲染并展现）
+    </canvas>
+    <hr>
+    <canvas id="my-canvas" width='300' height='200'>
+        Sorry, your browser doesn't support canvas.
+    </canvas>
+
+
+    <!-- noscript -->
+    <!-- script如果不被瀏覽器支持或未被執行，會顯示的替代內容。 -->
+    <noscript>
+        <!-- anchor linking to external file -->
+        Sorry, your browser doesn't support script.
+  <a href="http://www.mozilla.com/">External Link</a>
+    </noscript>
+    <p>Script is supported!</p>
+
+
+    <!--  -->
+    <!-- form -->
+
+    <!-- button -->
+    <button name="button">Click me</button>
+
+
+    <hr>
+    <!--label & input & datalist & option -->
+    <!-- input如果沒放在label下，需要 <label for=""與<input id=""來標註關聯 -->
+
+    <label>Choose a browser from this list:
+        <input list="browsers" name="myBrowser" /></label>
+    <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Internet Explorer">
+          <option value="Opera">
+          <option value="Safari">
+    </datalist>
+
+    <br>
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+
+    <hr>
+
+    <!-- label & select & optgroup & option -->
+    <!-- select下的option，value的值不會被列印出來，文本的內容才會。 -->
+    <label for="pet-select">Choose a pet:</label>
+    <select name="pets" id="pet-select" size="0">
+    <option value="">--Please choose an option--</option>
+    <optgroup label="First">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+    </optgroup>
+    <optgroup label="Second">
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </optgroup>
+    
+</select>
+
+
+    <!-- label & input -->
+    <!-- input的屬性中types有22種不同的樣是可以使用(button,checkbox,color,date,datetime-local,email,file,hidden,image,month,number,password,radio,range,reset,search,submit,tel,text,time,url,week)，各自不同的types也有對應的屬性能使用。 -->
+    <!-- label表示用户界面中某个元素的说明。 -->
+    <div class="preference">
+        <label for="cheese">Do you like cheese?</label>
+        <input type="checkbox" name="cheese" id="cheese">
+    </div>
+
+    <div class="preference">
+        <label for="peas">Do you like peas?</label>
+        <input type="checkbox" name="peas" id="peas">
+    </div>
+
+
+    <!-- form & fieldset & legend & input(radio) & label -->
+    <!-- fieldset會產生貫穿legend標題的外框，legend是fieldset的內容標題 -->
+    <!-- input的type是radio時，屬性name如果相同，只能選擇其中一個。 -->
+    <form action="">
+        <fieldset>
+            <legend>Choose your favorite monster</legend>
+            <input type="radio" id="kraken" name="monster">
+            <label for="kraken">Kraken</label><br>
+            <input type="radio" id="sasquatch" name="monster">
+            <label for="sasquatch">Sasquatch</label><br>
+            <input type="radio" id="mothman" name="monster">
+            <label for="mothman">Mothman</label><br>
+        </fieldset>
+    </form>
+
+    <!-- form & label & input(text,email,submit) -->
+    <form action="" method="get" class="example">
+        <div class="example">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="example">
+            <label for="email">Enter your email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="example">
+            <input type="submit" value="Subscribe !!">
+        </div>
+    </form>
+
+    <!-- meter -->
+    <!-- meter element represents either a scalar value within a known range or a fractional value. -->
+    <p>Heat the oven to <meter min="200" max="500" value="350"> 350 degrees</meter>.</p>
+    <label for="fuel">Fuel level:</label>
+    <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="60">at 50/100</meter>
+    <p>He got a
+        <em>B</em> <meter max="100" low="69" high="80" optimum="90" value="50">B</meter> on the exam.
+    </p>
+    <!-- 注意本例中min属性被省略，这是允许的，默认值为0。 -->
+
+
+    <!-- output -->
+    <!-- ouput 用for屬性和input的id連結，再用form的oninput屬性運算 -->
+    <form oninput=" result.value=parseInt(a.value)-parseInt(b.value)+parseInt(c.value)">
+        <input type="range" id="c" name="c" value="50">-
+        <input type="range" id="b" name="b" value="50">+
+        <input type="number" id="a" name="a" value="20">=
+        <output name="result" for="a b c">20</output>
+    </form>
+
+    <!-- progress -->
+    <!-- 用來顯示一項任務完成的進度。 -->
+    <label for="file">File progress:</label> 50%
+    <progress id="file" max="100" value="50">50%</progress>
+
+
+    <hr>
+    <!-- textarea -->
+    <!-- <textarea> 元素表示一个多行纯文本编辑控件，当你希望用户输入一段相当长的、不限格式的文本，例如评论或反馈表单中的一段意见时。 -->
+    <!-- cols與rows是視窗的大小 -->
+
+    <textarea class="placeholder" name="textarea" cols="30" rows="5" placeholder="Comment text."></textarea><br>
+    <!-- 站位符 -->
+
+    <label for="story">Tell us your story:</label><br>
+    <textarea name="story" id="story" cols="30" rows="5">It was a dark and stormy night...</textarea><br>
+
+    <textarea name="textarea" cols="30" rows="7" disabled>I am a disabled textarea</textarea>
+    <!-- 禁用的 -->
+    <textarea name="textarea" cols="30" rows="7" readonly>I am readonly textarea</textarea>
+    <!-- 唯讀的 -->
+
+
+    <!--  -->
+    <!-- 交互元素 -->
+
+    <!-- details & summary -->
+    <!-- A summary or label can be provided using the <summary> element. -->
+    <!-- summary可以是標題或是圖例 -->
+    <!-- details的樣式都是可以用CSS改變的。 -->
+    <details>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt atque odit commodi illum id sit numquam doloribus assumenda autem doloremque.
+    </details><br>
+    <details open>
+        <summary>This is summary</summary>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui pariatur facilis ab voluptatibus est neque saepe amet? Consequatur, at dolore!
+    </details>
+    <!-- disclosure mode-->
+
+    <br>
+    <!-- dialog -->
+    <!-- 可以是彈出的對話框 -->
+    <dialog open>
+        <p>Greetings, one and all!</p>
+    </dialog>
+
+
+    <script src="07_canvas.js">
+    </script>
+</body>
+
+
+</html>

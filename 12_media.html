@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD_demo_03</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    img {
+        width: 100%;
+        vertical-align: bottom;
+    }
+    
+    h1,
+    h2,
+    p {
+        text-align: center;
+    }
+    
+    .about {
+        background-color: #aaa;
+        padding: 0 5px 10px;
+    }
+    
+    .a,
+    .c {
+        margin: 10px 5px;
+    }
+    
+    .item {
+        padding: 0 30px 25px;
+    }
+    
+    .service {
+        background-color: #aaf;
+        margin-bottom: 30px;
+    }
+    
+    .text {
+        padding: 0px 5px 25px;
+    }
+    
+    @media screen and (min-width:768px) {
+        .container {
+            display: flex;
+            margin: auto;
+        }
+        .item {
+            padding: 10px 10px 25px;
+        }
+        .pic,
+        .text {
+            width: 50%;
+        }
+        .text {
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="banner">
+        <img src="https://picsum.photos/1400/430?random=1" alt="">
+        <div class="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, tempora! Animi error cum ea assumenda ex officia saepe doloremque voluptas.</p>
+        </div>
+    </div>
+
+
+    <div class="container a">
+        <div class="item"><img src="http://picsum.photos/750/500?random=2" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+        <div class="item"><img src="http://picsum.photos/750/500?random=3" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+        <div class="item"><img src="http://picsum.photos/750/500?random=4" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="container b">
+            <div class="pic">
+                <img src="http://picsum.photos/750/400?random=5" alt=""></div>
+
+            <div class="text">
+                <h2>service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ex odio beatae dolor repellendus itaque!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, tempora! Animi error cum ea assumenda ex officia saepe doloremque voluptas.</p>
+    </div>
+
+    <div class="container c">
+        <div class="item"><img src="http://picsum.photos/750/500?random=6" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+        <div class="item"><img src="http://picsum.photos/750/500?random=7" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+        <div class="item"><img src="http://picsum.photos/750/500?random=8" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+        <div class="item"><img src="http://picsum.photos/750/500?random=9" alt="">
+            <h2>title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, enim quos officia praesentium mollitia sed.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

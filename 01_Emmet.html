@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="02.css">
+</head>
+
+<body>
+
+    <h1>Emmet</h1>
+
+    div+div>p>span+em
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+    </div>
+
+    nav>ul>li*4^^article
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <article></article>
+
+    (nav>ul>li*4)+article>h3>p
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <article>
+        <h3>
+            <p></p>
+        </h3>
+    </article>
+
+    .wrap>#header>p.a1.a2
+    <div class="wrap">
+        <div id="header">
+            <p class="a1 a2"></p>
+        </div>
+    </div>
+
+    img.a1
+    <img src="" alt="" class="a1">
+
+    form[name method]>(input.text)*2
+    <form action="" name="" method="">
+        <input type="text" class="text">
+        <input type="text" class="text">
+    </form>
+
+    ul>li.item$*4
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+    </ul>
+
+    ol>li.item$@6*4
+    <ol>
+        <li class="item6"></li>
+        <li class="item7"></li>
+        <li class="item8"></li>
+        <li class="item9"></li>
+    </ol>
+
+    p{This is}
+    <p>This is</p>
+
+    ol>li.item$@5{$@2}*4
+    <ol>
+        <li class="item5">2</li>
+        <li class="item6">3</li>
+        <li class="item7">4</li>
+        <li class="item8">5</li>
+    </ol>
+
+
+    article#article>p>a[href="test.html"]{A link}
+    <article id="article">
+        <p><a href="test.html">A link</a></p>
+    </article>
+
+
+    
+    link:css
+    <link rel="stylesheet" href="style.css">
+
+    script:src
+    <script src=""></script>
+
+    img
+    <img src="" alt="">
+
+    meta:vp
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</body>
+
+</html>

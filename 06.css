@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Custom;
+    src: local(DFKai-SB);
+    /*標楷體*/
+    unicode-range: U+4E00-9FFF;
+    /* 中文 */
+}
+
+@font-face {
+    font-family: Custom;
+    src: local("Comic Sans MS");
+    unicode-range: U+00-024F;
+    /* 英文 */
+}
+
+.a {
+    font-family: Custom;
+}
+
+abbr {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+data:hover::after {
+    content: ' (ID ' attr(value) ')';
+    font-size: .7em;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+#my-canvas {
+    border: 1px solid rgb(151, 49, 49);
+}
+
+legend {
+    color: #fff;
+    background-color: #000;
+    padding: 5px 8px;
+}
+
+.placeholder {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: 3px 3px 1px #999;
+}
+
+details,
+details[open] summary {
+    border: 1px solid #333;
+}
